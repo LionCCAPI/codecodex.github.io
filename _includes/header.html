@@ -18,30 +18,45 @@
 
       {% include flags.html %}
 
-      {% for menu in site.menu reversed %}
-      {% assign class = nil %}
-      {% if (page.url contains menu.url and menu.url != '/') %}
-      {% assign class = 'active' %}
-      {% endif %}
+      {% if page.url contains '/en/' %}
+        {% for menu in site.menu_en %}
+        {% assign class = nil %}
+        {% if page.url contains menu.url %}
+        {% assign class = 'active' %}
+        {% endif %}
 
-      {% if menu.url contains 'http://' or menu.url contains 'https://' %}
-      <li class="header-item {{class}}">
-        <a href="{{menu.url}}" target="_blank" rel="noopener noreferrer">{{ menu.title }}</a>
-      </li>
-      {% else %}
-        {% if page.url contains '/en/' %}
+        {% if menu.url contains 'http://' or menu.url contains 'https://' %}
         <li class="header-item {{class}}">
-          <a href="{{ '/en/' | append: menu.url | relative_url }}">{{ menu.title }}</a>
+          <a href="{{menu.url}}" target="_blank" rel="noopener noreferrer">{{ menu.title }}</a>
+        </li>
+        {% else %}
+        <li class="header-item {{class}}">
+          <a href="{{ '/en/' | append: menu.url | relative_url }}">
+            {{ menu.title }}{% if menu.badge == 'hot' %} <span class="nav-badge new">HOT</span>{% endif %}{% if menu.badge == 'new' %} <span class="nav-badge hot">NEW</span>{% endif %}
+          </a>
+        </li>
+        {% endif %}
+        {% endfor %}
+      {% else %}
+        {% for menu in site.menu %}
+        {% assign class = nil %}
+        {% if (page.url contains menu.url and menu.url != '/') %}
+        {% assign class = 'active' %}
+        {% endif %}
+
+        {% if menu.url contains 'http://' or menu.url contains 'https://' %}
+        <li class="header-item {{class}}">
+          <a href="{{menu.url}}" target="_blank" rel="noopener noreferrer">{{ menu.title }}</a>
         </li>
         {% else %}
         <li class="header-item {{class}}">
           <a href="{{ menu.url | relative_url }}">
-            {{ menu.title }}{% if menu.title == '拼车指南' %} <span class="nav-badge new">HOT</span>{% endif %}{% if menu.title == '部署教程' %} <span class="nav-badge hot">NEW</span>{% endif %}
+            {{ menu.title }}{% if menu.badge == 'hot' %} <span class="nav-badge new">HOT</span>{% endif %}{% if menu.badge == 'new' %} <span class="nav-badge hot">NEW</span>{% endif %}
           </a>
         </li>
         {% endif %}
+        {% endfor %}
       {% endif %}
-      {% endfor %}
     </ul>
   </div>
 

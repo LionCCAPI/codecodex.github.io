@@ -10,3 +10,23 @@ _config.gh-pages.yml
 .vscode
 Gemfile.lock
 
+# Backup and deployment files
+*.tar.gz
+*.zip
+site_*
+deploy*.sh
+build.sh
+README_DEPLOY.md
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# Internal documentation (not for GitHub)
+docs/
+LANGUAGE_SWITCH_FEATURE_DOC.md
+HEADER_FLAGS_LANGUAGE_SWITCH_DOC.md
+BETTAFISH_SYNC_COMPLETE.md
+*_SYNC_COMPLETE.md
+*_DOC.md

@@ -1,0 +1,173 @@
+<h2>🐧 Linux Installation</h2>
+
+<h3>Step 1: Install Node.js Environment</h3>
+
+<p>Claude Code requires Node.js environment to run.</p>
+
+<h4>Method 1: Using Official Repository (Recommended)</h4>
+
+<pre><code class="language-bash"># Add NodeSource repository
+curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+
+# Install Node.js
+sudo apt-get install -y nodejs
+</code></pre>
+
+<h4>Method 2: Using System Package Manager</h4>
+
+<p>While the version may not be the latest, it's sufficient for basic use:</p>
+
+<pre><code class="language-bash"># Ubuntu/Debian
+sudo apt update
+sudo apt install nodejs npm
+
+# CentOS/RHEL/Fedora
+sudo dnf install nodejs npm
+</code></pre>
+
+<h4>Linux Notes</h4>
+
+<ul>
+<li>Some distributions may require additional dependencies</li>
+<li>Use <code>sudo</code> if encountering permission issues</li>
+<li>Ensure your user has write permissions to npm's global directory</li>
+</ul>
+
+<h4>Verify Installation Success</h4>
+
+<p>After installation, open terminal and enter the following commands:</p>
+
+<pre><code class="language-bash">node --version
+npm --version
+</code></pre>
+
+<p>If version numbers are displayed, installation was successful!</p>
+
+<h3>Step 2: Install Claude Code</h3>
+
+<p>Open terminal and run the following command:</p>
+
+<pre><code class="language-bash"># Install Claude Code globally
+npm install -g @anthropic-ai/claude-code
+</code></pre>
+
+<p>If you encounter permission issues, use sudo:</p>
+
+<pre><code class="language-bash">sudo npm install -g @anthropic-ai/claude-code
+</code></pre>
+
+<h4>Verify Claude Code Installation</h4>
+
+<p>After installation, enter the following command to check if installation was successful:</p>
+
+<pre><code class="language-bash">claude --version
+</code></pre>
+
+<p>If the version number is displayed, congratulations! Claude Code has been successfully installed.</p>
+
+<h3>Step 3: Set Environment Variables</h3>
+
+<p>To connect Claude Code to your relay service, you need to set two environment variables.</p>
+
+<h4>Method 1: Temporary Setup (Current Session)</h4>
+
+<p>Run the following commands in terminal:</p>
+
+<pre><code class="language-bash">export ANTHROPIC_BASE_URL="https://use.codecodex.ai/api"
+export ANTHROPIC_AUTH_TOKEN="your-api-key"
+</code></pre>
+
+<blockquote>
+<p>💡 Remember to replace <strong>"your-api-key"</strong> with the actual key created in the admin portal "API Keys" tab.</p>
+</blockquote>
+
+<h4>Method 2: Permanent Setup</h4>
+
+<p>Edit your shell configuration file (depending on your shell):</p>
+
+<p><strong>For bash:</strong></p>
+<pre><code class="language-bash">echo 'export ANTHROPIC_BASE_URL="https://use.codecodex.ai/api"' >> ~/.bashrc
+echo 'export ANTHROPIC_AUTH_TOKEN="your-api-key"' >> ~/.bashrc
+source ~/.bashrc
+</code></pre>
+
+<p><strong>For zsh:</strong></p>
+<pre><code class="language-bash">echo 'export ANTHROPIC_BASE_URL="https://use.codecodex.ai/api"' >> ~/.zshrc
+echo 'export ANTHROPIC_AUTH_TOKEN="your-api-key"' >> ~/.zshrc
+source ~/.zshrc
+</code></pre>
+
+<h4>Verify Environment Variable Setup</h4>
+
+<p>After setting environment variables, verify with the following commands:</p>
+
+<pre><code class="language-bash">echo $ANTHROPIC_BASE_URL
+echo $ANTHROPIC_AUTH_TOKEN
+</code></pre>
+
+<p><strong>Expected Output Example:</strong></p>
+<pre><code>https://use.codecodex.ai/api
+cr_xxxxxxxxxxxxxxxxxx</code></pre>
+
+<h3>Step 4: Start Using Claude Code</h3>
+
+<p>Now you can start using Claude Code!</p>
+
+<h4>Launch Claude Code</h4>
+
+<pre><code class="language-bash">claude
+</code></pre>
+
+<h4>Use in a Specific Project</h4>
+
+<pre><code class="language-bash"># Navigate to your project directory
+cd /path/to/your/project
+
+# Launch Claude Code
+claude
+</code></pre>
+
+<h3>🔧 Linux Common Issues</h3>
+
+<details>
+<summary><strong>Permission Error During Installation</strong></summary>
+
+<p><strong>Solution:</strong></p>
+<pre><code class="language-bash"># Install using sudo
+sudo npm install -g @anthropic-ai/claude-code
+
+# Or configure npm's global directory to user folder
+mkdir ~/.npm-global
+npm config set prefix '~/.npm-global'
+echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.bashrc
+source ~/.bashrc
+</code></pre>
+
+</details>
+
+<details>
+<summary><strong>Missing Dependencies</strong></summary>
+
+<p><strong>Solution:</strong></p>
+<pre><code class="language-bash"># Ubuntu/Debian
+sudo apt-get install -y build-essential
+
+# CentOS/RHEL/Fedora
+sudo dnf groupinstall "Development Tools"
+</code></pre>
+
+</details>
+
+<details>
+<summary><strong>Environment Variables Not Taking Effect</strong></summary>
+
+<p><strong>Solution:</strong></p>
+<ol>
+<li>Ensure you modified the correct configuration file (<code>.bashrc</code> or <code>.zshrc</code>)</li>
+<li>Restart the terminal</li>
+<li>Check your current shell:
+   <pre><code class="language-bash">echo $SHELL</code></pre>
+</li>
+</ol>
+
+</details>

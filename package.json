@@ -1,13 +1,13 @@
 {
   "name": "codecodex-site",
   "author": "Jascen <contact@codecodex.ai>",
-  "homepage": "https://jascenn.github.io",
+  "homepage": "https://codecodex.ai",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Jascenn/tw93.github.io"
+    "url": "https://github.com/Jascenn/codecodex.ai"
   },
   "bugs": {
-    "url": "https://github.com/Jascenn/tw93.github.io/issues"
+    "url": "https://github.com/Jascenn/codecodex.ai/issues"
   },
   "scripts": {
     "prep": "gem install bundler && bundle install",

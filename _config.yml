@@ -2,11 +2,11 @@
 # 网站核心信息 / Site Core Information
 # ==============================================================================
 
-title: Lion CC - Claude Code 拼车服务 | 最低¥366/月起
-description: Lion CC 提供 Claude Code 官方授权拼车服务，最低¥366/月起，支持1-6人灵活拼车，绕过CC封锁，国内网络直接使用，稳定运营3个月，VibeCodingAPI算力服务商，欢迎代理合作
+title: Lion CC - Claude Code 拼车服务 | 最低¥398/月起
+description: Lion CC 提供 Claude Code 官方授权拼车服务，最低¥398/月起（6人车），3人车 ¥768/月，1人车 ¥2200/月，支持1-6人灵活拼车，绕过CC封锁，国内网络直接使用，稳定运营3个月，VibeCodingAPI算力服务商，欢迎代理合作
 url: https://codecodex.ai
 baseurl: ""
-repo: 1994dira/codecodex.github.io
+repo: Jascenn/codecodex.ai
 
 # 语言和编码设置
 lang: zh-CN
@@ -17,7 +17,7 @@ timezone: Asia/Shanghai
 # 社交媒体与联系方式 / Social Media & Contact
 # ==============================================================================
 
-github: 1994dira
+github: Jascenn
 zhihu: ""
 twitter: ""
 wechat: HSQBJ088888888
@@ -32,18 +32,33 @@ admin_dashboard: https://use.codecodex.ai/admin-next/api-stats
 # ==============================================================================
 
 menu:
-  - title: 拼车指南
-    url: /carpool.html
-    badge: hot
+  - title: 关于
+    url: /about.html
+  - title: 安装指南
+    url: /installation-guide.html
+  - title: 常见问题
+    url: /faq.html
   - title: 部署教程
     url: /deployment-guide.html
     badge: new
-  - title: 常见问题
-    url: /faq.html
-  - title: 安装指南
-    url: /installation-guide.html
-  - title: 关于
-    url: /about.html
+  - title: 拼车指南
+    url: /carpool.html
+    badge: hot
+
+# 英文导航菜单 / English Navigation Menu
+menu_en:
+  - title: About
+    url: about.html
+  - title: Installation Guide
+    url: installation-guide.html
+  - title: FAQ
+    url: faq.html
+  - title: Deployment Guide
+    url: deployment-guide.html
+    badge: new
+  - title: Carpool Guide
+    url: carpool.html
+    badge: hot
 
 # ==============================================================================
 # SEO 与分析 / SEO & Analytics
@@ -131,13 +146,13 @@ defaultImage: data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAIC
 
 site_name: Lion CC
 site_slogan: Claude Code 拼车服务 - 探索 AI 编程的无限可能
-site_description: Lion CC 提供专业的 Claude Code 拼车服务，最低¥366/月起，稳定运营3个月
+site_description: Lion CC 提供专业的 Claude Code 拼车服务，最低¥398/月起（6人车），3人车 ¥768/月，1人车 ¥2200/月，稳定运营3个月
 
 # 作者信息
 author_name: 所罗门号商
 author_title: Lion CC 创始人 | 全域 AI 号商
 author_email: contact@codecodex.ai
-author_github: 1994dira
+author_github: Jascenn
 author_twitter: ''
 author_wechat: HSQBJ088888888
 
@@ -160,28 +175,19 @@ show_author: true
 # 拼车套餐配置
 carpool_plans:
   - name: 6人拼车
-    price: 366
+    price: 398
     users: 6
-    official_price: 200
-  - name: 5人拼车
-    price: 440
-    users: 5
-    official_price: 200
-  - name: 4人拼车
-    price: 550
-    users: 4
+    quota: 133
     official_price: 200
   - name: 3人拼车
-    price: 733
+    price: 768
     users: 3
-    official_price: 200
-  - name: 2人拼车
-    price: 1100
-    users: 2
+    quota: 267
     official_price: 200
   - name: 1人包车
     price: 2200
     users: 1
+    quota: 800
     official_price: 200
 
 # 服务特点

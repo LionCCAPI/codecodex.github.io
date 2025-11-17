@@ -1,0 +1,158 @@
+<h2>🍎 macOS Installation</h2>
+
+<h3>Step 1: Install Node.js Environment</h3>
+
+<p>Claude Code requires Node.js environment to run.</p>
+
+<h4>Method 1: Using Homebrew (Recommended)</h4>
+
+<p>If you already have Homebrew installed, using it to install Node.js is more convenient:</p>
+
+<pre><code class="language-bash"># Update Homebrew
+brew update
+
+# Install Node.js
+brew install node</code></pre>
+
+<h4>Method 2: Official Download</h4>
+
+<ol>
+<li>Visit <a href="https://nodejs.org/">https://nodejs.org/</a></li>
+<li>Download the LTS version for macOS</li>
+<li>Open the downloaded <code>.pkg</code> file</li>
+<li>Follow the installer instructions to complete installation</li>
+</ol>
+
+<h4>macOS Notes</h4>
+
+<ul>
+<li>You may need to use <code>sudo</code> if encountering permission issues</li>
+<li>First run may require permission in System Preferences</li>
+<li>Recommended to use Terminal or iTerm2</li>
+</ul>
+
+<h4>Verify Installation Success</h4>
+
+<p>After installation, open Terminal and enter the following commands:</p>
+
+<pre><code class="language-bash">node --version
+npm --version</code></pre>
+
+<p>If version numbers are displayed, installation was successful!</p>
+
+<h3>Step 2: Install Claude Code</h3>
+
+<p>Open Terminal and run the following command:</p>
+
+<pre><code class="language-bash"># Install Claude Code globally
+npm install -g @anthropic-ai/claude-code</code></pre>
+
+<p>If you encounter permission issues, use sudo:</p>
+
+<pre><code class="language-bash">sudo npm install -g @anthropic-ai/claude-code</code></pre>
+
+<h4>Verify Claude Code Installation</h4>
+
+<p>After installation, enter the following command to check if installation was successful:</p>
+
+<pre><code class="language-bash">claude --version</code></pre>
+
+<p>If the version number is displayed, congratulations! Claude Code has been successfully installed.</p>
+
+<h3>Step 3: Set Environment Variables</h3>
+
+<p>To connect Claude Code to your relay service, you need to set two environment variables.</p>
+
+<h4>Method 1: Temporary Setup (Current Session)</h4>
+
+<p>Run the following commands in Terminal:</p>
+
+<pre><code class="language-bash">export ANTHROPIC_BASE_URL="https://use.codecodex.ai/api"
+export ANTHROPIC_AUTH_TOKEN="your-api-key"</code></pre>
+
+<blockquote>
+<p>💡 Remember to replace <strong>"your-api-key"</strong> with the actual key created in the admin portal "API Keys" tab.</p>
+</blockquote>
+
+<h4>Method 2: Permanent Setup</h4>
+
+<p>Edit your shell configuration file (depending on your shell):</p>
+
+<p><strong>For zsh (default):</strong></p>
+<pre><code class="language-bash">echo 'export ANTHROPIC_BASE_URL="https://use.codecodex.ai/api"' >> ~/.zshrc
+echo 'export ANTHROPIC_AUTH_TOKEN="your-api-key"' >> ~/.zshrc
+source ~/.zshrc</code></pre>
+
+<p><strong>For bash:</strong></p>
+<pre><code class="language-bash">echo 'export ANTHROPIC_BASE_URL="https://use.codecodex.ai/api"' >> ~/.bash_profile
+echo 'export ANTHROPIC_AUTH_TOKEN="your-api-key"' >> ~/.bash_profile
+source ~/.bash_profile</code></pre>
+
+<h4>Verify Environment Variable Setup</h4>
+
+<p>After setting environment variables, verify with the following commands:</p>
+
+<pre><code class="language-bash">echo $ANTHROPIC_BASE_URL
+echo $ANTHROPIC_AUTH_TOKEN</code></pre>
+
+<p><strong>Expected Output Example:</strong></p>
+<pre><code>https://use.codecodex.ai/api
+cr_xxxxxxxxxxxxxxxxxx</code></pre>
+
+<h3>Step 4: Start Using Claude Code</h3>
+
+<p>Now you can start using Claude Code!</p>
+
+<h4>Launch Claude Code</h4>
+
+<pre><code class="language-bash">claude</code></pre>
+
+<h4>Use in a Specific Project</h4>
+
+<pre><code class="language-bash"># Navigate to your project directory
+cd /path/to/your/project
+
+# Launch Claude Code
+claude</code></pre>
+
+<h3>🔧 macOS Common Issues</h3>
+
+<details>
+<summary><strong>Permission Error During Installation</strong></summary>
+
+<p><strong>Solution:</strong></p>
+<pre><code class="language-bash"># Install using sudo
+sudo npm install -g @anthropic-ai/claude-code
+
+# Or modify npm permissions
+sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}</code></pre>
+
+</details>
+
+<details>
+<summary><strong>macOS Security Settings Blocking Execution</strong></summary>
+
+<p><strong>Solution:</strong></p>
+<ol>
+<li>Open "System Preferences" → "Security & Privacy"</li>
+<li>In the "General" tab, click "Open Anyway"</li>
+<li>Or run in terminal:
+   <pre><code class="language-bash">sudo spctl --master-disable</code></pre>
+</li>
+</ol>
+
+</details>
+
+<details>
+<summary><strong>Environment Variables Not Taking Effect</strong></summary>
+
+<p><strong>Solution:</strong></p>
+<ol>
+<li>Ensure you modified the correct configuration file (<code>.zshrc</code> or <code>.bash_profile</code>)</li>
+<li>Restart the terminal application</li>
+<li>Check your current shell:
+   <pre><code class="language-bash">echo $SHELL</code></pre>
+</li>
+</ol>
+
+</details>

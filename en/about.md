@@ -1,21 +1,65 @@
 ---
 layout: page
-title: About
+title: About Lion CC
 permalink: /en/about.html
 hideHomeActive: true
+comments: false
 lang: en-US
+description: Lion CC Leo Programming - Global leading AI programming solution provider, focusing on Claude Code carpool, AI computing services, stable operation for 3+ months, agency partnership welcome
+keywords: Lion CC,Leo Programming,AI Programming Services,Claude Carpool Provider,AI Computing Platform,VibeCodingAPI,Agency Partnership
 ---
 
-## About Me
+<div style="text-align: center; margin: 40px 0;">
+  <img src="/images/config/logo.svg" alt="Lion CC" style="height: 120px; width: auto;">
+</div>
 
-- I'm an engineer based in Hangzhou, China, specializing in front-end development, with some experience in Swift, Rust, Python, and a bit of design.
-- I'm a fan of open-source culture and not keen on the tech influencer scene. I enjoy experimenting with new technologies and am a strong believer in long-termism.
-- I have a passion for creating products that are simple, beautiful, and user-friendly. I've worked on developer tools and AI workflows at CodeCodex.
-- My blog [**CodeCodex**](https://jascenn.github.io/), is where I share insights on AI coding, productivity, and engineering.
+## About Lion CC Leo Programming
 
-## Follow Me
+Lion CC is a global leading AI programming solution provider, focusing on the promotion and service of cutting-edge AI programming tools like Claude Code.
 
-- [Github](https://github.com/{{site.github}})
-- [Twitter](https://twitter.com/{{site.twitter}})
-- [Zhihu](https://www.zhihu.com/people/{{site.zhihu}})
-- [V2EX](https://www.v2ex.com/member/{{site.v2ex}})
+### 🎯 Core Services
+
+- **🚗 Carpool Service** - [codecodex.ai](https://codecodex.ai) Claude Code Max $200 Carpool
+  - Stable operation for 3+ months
+  - 6-person: ¥398/month, 3-person: ¥768/month, 1-person: ¥2200/month
+  - Bypass official restrictions, regional locks, zero IP requirements
+  - Agency partnership welcome
+- **⚡ Computing Service** - [VibeCodingAPI.ai](https://VibeCodingAPI.ai) Global AI Model API Computing Provider
+  - ChatGPT / Claude / Gemini / Grok / DeepSeek
+  - Claude Code / ChatGPT Codex programming tools
+  - Official native anti-IP throttling, full-performance domestic mirror
+- **🤖 AI Robot** - Hardware and software integrated development
+- **🌍 Global Expansion** - E-commerce and independent site operation guidance
+
+### 💼 About the Founder
+
+<div style="text-align: center; margin: 40px 0;">
+  <img src="/images/person info.jpg" alt="Solomon - Lion CC Founder" style="max-width: 500px; width: 100%; border-radius: 15px; box-shadow: 0 8px 16px rgba(0,0,0,0.2);">
+</div>
+
+**Solomon** - Entrepreneur from Chaoshan, based in Guangzhou-Shenzhen
+
+- 🦁 **Leo who loves the sun and yearns for freedom**
+- 💼 **Unity of knowledge and action, AIGC promotion** (Online sponsor & Offline volunteer)
+- 🤖 **Full-domain AI account provider & Card merchant & API computing service provider & CC carpool service provider**
+- 📝 **Follow blog [LionCC.ai](https://LionCC.ai)**
+
+> 💡 Focus on full-domain AI accounts and global AI computing services, committed to helping more people understand and use AI programming tools. Grateful to meet, looking forward to learning and communication together!
+
+### 📬 Contact Information
+
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/images/qrcode.jpg" alt="Lion CC Carpool Group QR Code" style="max-width: 280px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <p style="margin-top: 15px;"><strong>Scan to Join Lion CC Carpool Group</strong></p>
+</div>
+
+- **Group Manager**: LionCC.ai@拼车助手 (WeChat)
+- **Official Blog**: [LionCC.ai](https://LionCC.ai) - Solomon's Blog
+- **Carpool Website**: [codecodex.ai](https://codecodex.ai)
+- **Computing Platform**: [VibeCodingAPI.ai](https://VibeCodingAPI.ai)
+- **Management Dashboard**: [use.codecodex.ai/admin-next/api-stats](https://use.codecodex.ai/admin-next/api-stats)
+- **Telegram**: [@codecodex_ai](https://t.me/codecodex_ai)
+
+---
+
+© 2025 Lion CC Leo Programming - Explore the Infinite Possibilities of AI Programming

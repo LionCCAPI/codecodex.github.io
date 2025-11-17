@@ -29,9 +29,9 @@ Lion CC 提供的 Claude Code 解决方案，基于服务器托管和网关 IP �
 
 ### 第一步：联系客服预约
 
-添加微信 **HSQBJ088888888**，告知客服：
+添加群管理拼车助手微信 **LionCC.ai@拼车助手**，告知客服：
 - 你要预定几人车（1-6人）
-- 选择套餐（包车/拼车）
+- 选择套餐（6人车 ¥398/月、3人车 ¥768/月、1人车 ¥2200/月）
 
 ### 第二步：订阅官方账号
 
@@ -174,7 +174,7 @@ claude "分析并修复这个错误: TypeError at line 42"
 **A:** 访问管理后台 [https://use.codecodex.ai/admin-next/api-stats](https://use.codecodex.ai/admin-next/api-stats) 实时查看。
 
 ### Q: API Key 忘记了怎么办？
-**A:** 联系客服微信 HSQBJ088888888，客服会重新发送。
+**A:** 联系群管理拼车助手微信 **LionCC.ai@拼车助手**，客服会重新发送。
 
 ### Q: 支持哪些操作系统？
 **A:** 支持 Windows、macOS、Linux 全平台。
@@ -188,10 +188,17 @@ claude "分析并修复这个错误: TypeError at line 42"
 
 **遇到部署问题？**
 
-- **微信客服**: HSQBJ088888888
-- **服务时间**: 工作日 9:00-21:00（节假日正常响应）
-- **官方网站**: [codecodex.ai](https://codecodex.ai)
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/images/qrcode.jpg" alt="Lion CC 拼车群二维码" style="max-width: 260px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <p style="margin-top: 15px;"><strong>扫码加入拼车群咨询</strong></p>
+</div>
+
+- **群管理拼车助手**: LionCC.ai@拼车助手（微信）
+- **官方博客**: [LionCC.ai](https://LionCC.ai) - 所罗门博客
+- **拼车官网**: [codecodex.ai](https://codecodex.ai)
+- **算力平台**: [VibeCodingAPI.ai](https://VibeCodingAPI.ai)
 - **管理后台**: [use.codecodex.ai/admin-next/api-stats](https://use.codecodex.ai/admin-next/api-stats)
+- **Telegram**: [@codecodex_ai](https://t.me/codecodex_ai)
 
 ---
 
@@ -200,11 +207,11 @@ claude "分析并修复这个错误: TypeError at line 42"
 **预约上车 Claude Code 送 ChatGPT Codex 免费体验！**
 
 Lion CC 同时提供：
-- 🚗 Claude Code 拼车服务
-- ⚡ VibeCodingAPI.ai 算力服务
+- 🚗 Claude Code 拼车服务（6人车 ¥398/月、3人车 ¥768/月、1人车 ¥2200/月）
+- ⚡ VibeCodingAPI.ai 全球 AI 大模型 API 算力服务
 - 🤖 ChatGPT Codex 编程服务
 
-详情咨询微信：**HSQBJ088888888**
+详情咨询群管理拼车助手微信：**LionCC.ai@拼车助手**
 
 ---
 

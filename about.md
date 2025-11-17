@@ -18,11 +18,11 @@ Lion CC 是全球领先的 AI 编程解决方案提供商，专注于 Claude Cod
 
 ### 🎯 核心服务
 
-- **🚗 拼车服务** - [codecodex.ai](https://codecodex.ai) Claude Code 官网原生拼车，性价比之选
-  - 稳定运营近 3 个月，口碑保证
-  - 支持 1-6 人灵活拼车
-  - 绕过 CC 封锁，国内网络直接使用
-  - 欢迎代理合作
+- **🚗 拼车服务** - [codecodex.ai](https://codecodex.ai) Claude Code Max 200刀拼车
+  - 运行稳定 3 个月+
+  - 6人车 ¥398/月，3人车 ¥768/月，1人车 ¥2200/月
+  - 绕过官方封号、国区封锁、零IP环境门槛
+  - 欢迎合作推广
 - **⚡ 算力服务** - [VibeCodingAPI.ai](https://VibeCodingAPI.ai) 全球 AI 大模型 API 算力服务商
   - ChatGPT / Claude / Gemini / Grok / DeepSeek
   - Claude Code / ChatGPT Codex 编程工具
@@ -32,14 +32,32 @@ Lion CC 是全球领先的 AI 编程解决方案提供商，专注于 Claude Cod
 
 ### 💼 关于创始人
 
-所罗门，潮汕人在广深，连续创业者。专注全域 AI 号商与全球 AI 算力服务，致力于帮助更多人了解并使用 AI 编程工具。感恩遇见，期待一起学习交流玩赚！
+<div style="text-align: center; margin: 40px 0;">
+  <img src="/images/person info.jpg" alt="所罗门 - Lion CC 创始人" style="max-width: 500px; width: 100%; border-radius: 15px; box-shadow: 0 8px 16px rgba(0,0,0,0.2);">
+</div>
+
+**所罗门** - 潮汕人在广深，连续创业者
+
+- 🦁 **狮子座喜欢太阳向往自由**
+- 💼 **知行合一 科普推广 AIGC**（线上赞助商&线下志愿者）
+- 🤖 **全域 AI 号商 & 卡商 & API 算力服务商 & 编程 CC 拼车服务商**
+- 📝 **欢迎关注博客 [LionCC.ai](https://LionCC.ai)**
+
+> 💡 专注全域 AI 号商与全球 AI 算力服务，致力于帮助更多人了解并使用 AI 编程工具。感恩遇见，期待一起学习交流玩赚！
 
 ### 📬 联系方式
 
-- **微信 ID**: HSQBJ088888888
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/images/qrcode.jpg" alt="Lion CC 拼车群二维码" style="max-width: 280px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <p style="margin-top: 15px;"><strong>扫码加入 Lion CC 拼车群</strong></p>
+</div>
+
+- **群管理拼车助手**: LionCC.ai@拼车助手（微信）
+- **官方博客**: [LionCC.ai](https://LionCC.ai) - 所罗门博客
 - **拼车官网**: [codecodex.ai](https://codecodex.ai)
 - **算力平台**: [VibeCodingAPI.ai](https://VibeCodingAPI.ai)
 - **管理后台**: [use.codecodex.ai/admin-next/api-stats](https://use.codecodex.ai/admin-next/api-stats)
+- **Telegram**: [@codecodex_ai](https://t.me/codecodex_ai)
 
 ---
 

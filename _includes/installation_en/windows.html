@@ -1,0 +1,158 @@
+<h2>🪟 Windows Installation</h2>
+
+<h3>Step 1: Install Node.js Environment</h3>
+
+<p>Claude Code requires Node.js environment to run.</p>
+
+<h4>Method 1: Using Official Installer (Recommended)</h4>
+
+<ol>
+<li>Visit <a href="https://nodejs.org/">https://nodejs.org/</a></li>
+<li>Click to download "LTS" version (Recommended)</li>
+<li>Download Windows Installer (.msi)</li>
+<li>Run the installer, keep default settings</li>
+<li>Restart your computer after installation</li>
+</ol>
+
+<h4>Method 2: Using Chocolatey Package Manager</h4>
+
+<p>If you already have Chocolatey installed, you can install via command line:</p>
+
+<pre><code class="language-powershell"># Run PowerShell as Administrator
+choco install nodejs</code></pre>
+
+<h4>Windows Notes</h4>
+
+<ul>
+<li>Environment variables will be configured automatically during installation</li>
+<li>PowerShell is recommended over CMD</li>
+<li>Some enterprise environments may require administrator privileges</li>
+</ul>
+
+<h4>Verify Installation Success</h4>
+
+<p>After installation, open PowerShell and enter the following commands:</p>
+
+<pre><code class="language-powershell">node --version
+npm --version</code></pre>
+
+<p>If version numbers are displayed, installation was successful!</p>
+
+<h3>Step 2: Install Claude Code</h3>
+
+<p>Open PowerShell (recommended to run as Administrator) and run the following command:</p>
+
+<pre><code class="language-powershell"># Install Claude Code globally
+npm install -g @anthropic-ai/claude-code</code></pre>
+
+<h4>Verify Claude Code Installation</h4>
+
+<p>After installation, enter the following command to check if installation was successful:</p>
+
+<pre><code class="language-powershell">claude --version</code></pre>
+
+<p>If the version number is displayed, congratulations! Claude Code has been successfully installed.</p>
+
+<h3>Step 3: Set Environment Variables</h3>
+
+<p>To connect Claude Code to your relay service, you need to set two environment variables.</p>
+
+<h4>Method 1: Temporary Setup (Current Session)</h4>
+
+<p>Run the following commands in PowerShell:</p>
+
+<pre><code class="language-powershell">$env:ANTHROPIC_BASE_URL = "https://use.codecodex.ai/api"
+$env:ANTHROPIC_AUTH_TOKEN = "your-api-key"</code></pre>
+
+<blockquote>
+<p>💡 Remember to replace <strong>"your-api-key"</strong> with the actual key created in the admin portal "API Keys" tab.</p>
+</blockquote>
+
+<h4>Method 2: Permanent Setup</h4>
+
+<p><strong>Using System Settings (GUI):</strong></p>
+<ol>
+<li>Right-click "This PC" → "Properties"</li>
+<li>Click "Advanced system settings"</li>
+<li>Click "Environment Variables"</li>
+<li>In "User variables" click "New" and add:
+   <ul>
+   <li>Variable name: <code>ANTHROPIC_BASE_URL</code></li>
+   <li>Variable value: <code>https://use.codecodex.ai/api</code></li>
+   </ul>
+</li>
+<li>Click "New" again and add:
+   <ul>
+   <li>Variable name: <code>ANTHROPIC_AUTH_TOKEN</code></li>
+   <li>Variable value: <code>your-api-key</code></li>
+   </ul>
+</li>
+<li>Click "OK" to save</li>
+</ol>
+
+<p><strong>Using PowerShell (Permanent Setup):</strong></p>
+
+<pre><code class="language-powershell"># Set user-level environment variables
+[Environment]::SetEnvironmentVariable("ANTHROPIC_BASE_URL", "https://use.codecodex.ai/api", "User")
+[Environment]::SetEnvironmentVariable("ANTHROPIC_AUTH_TOKEN", "your-api-key", "User")</code></pre>
+
+<h4>Verify Environment Variable Setup</h4>
+
+<p>Reopen PowerShell and run the following commands to verify settings:</p>
+
+<pre><code class="language-powershell">echo $env:ANTHROPIC_BASE_URL
+echo $env:ANTHROPIC_AUTH_TOKEN</code></pre>
+
+<p><strong>Expected Output Example:</strong></p>
+<pre><code>https://use.codecodex.ai/api
+cr_xxxxxxxxxxxxxxxxxx</code></pre>
+
+<h3>Step 4: Start Using Claude Code</h3>
+
+<p>Now you can start using Claude Code!</p>
+
+<h4>Launch Claude Code</h4>
+
+<pre><code class="language-powershell">claude</code></pre>
+
+<h4>Use in a Specific Project</h4>
+
+<pre><code class="language-powershell"># Navigate to your project directory
+cd C:\path\to\your\project
+
+# Launch Claude Code
+claude</code></pre>
+
+<h3>🔧 Windows Common Issues</h3>
+
+<details>
+<summary><strong>PowerShell Execution Policy Error</strong></summary>
+
+<p><strong>Solution:</strong></p>
+<pre><code class="language-powershell"># Run PowerShell as Administrator, then execute
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser</code></pre>
+
+</details>
+
+<details>
+<summary><strong>npm Permission Error</strong></summary>
+
+<p><strong>Solution:</strong></p>
+<ol>
+<li>Run PowerShell as Administrator</li>
+<li>Or configure npm's global directory to user folder</li>
+</ol>
+
+</details>
+
+<details>
+<summary><strong>Environment Variables Not Taking Effect</strong></summary>
+
+<p><strong>Solution:</strong></p>
+<ol>
+<li>Make sure you restarted PowerShell</li>
+<li>Check if environment variables are set correctly</li>
+<li>Try restarting your computer</li>
+</ol>
+
+</details>

@@ -1,26 +1,27 @@
 ---
 layout: page
-title: Claude Code 安装指南
-permalink: /installation-guide.html
+title: Claude Code Installation Guide
+permalink: /en/installation-guide.html
+lang: en-US
 ---
 
 <div class="install-hero">
-  <h1>📦 Claude Code 安装指南</h1>
-  <p class="subtitle">覆盖 Windows / macOS / Linux 全平台，从环境准备到首次运行，一步到位。</p>
+  <h1>📦 Claude Code Installation Guide</h1>
+  <p class="subtitle">Complete guide for Windows / macOS / Linux - from environment setup to first run.</p>
   <div class="quick-actions">
-    <a class="qa-btn" href="/usage-guide.html">🚀 立即上手</a>
-    <a class="qa-btn ghost" href="/comprehensive-guide.html">📖 完整指南</a>
+    <a class="qa-btn" href="/en/carpool.html">🚀 Get Started</a>
+    <a class="qa-btn ghost" href="/en/comprehensive-guide.html">📖 Complete Guide</a>
   </div>
 </div>
 
-## 🎯 选择你的操作系统
+## 🎯 Choose Your Operating System
 
 <div class="installation-tabs">
   <div class="tab-buttons">
     <button class="tab-button active" data-tab="windows">
       <span class="tab-icon">🪟</span>
       <span class="tab-title">Windows</span>
-      <span class="tab-subtitle">PowerShell + 图形界面</span>
+      <span class="tab-subtitle">PowerShell + GUI</span>
     </button>
     <button class="tab-button" data-tab="macos">
       <span class="tab-icon">🍎</span>
@@ -30,63 +31,63 @@ permalink: /installation-guide.html
     <button class="tab-button" data-tab="linux">
       <span class="tab-icon">🐧</span>
       <span class="tab-title">Linux/WSL2</span>
-      <span class="tab-subtitle">命令行 + 包管理器</span>
+      <span class="tab-subtitle">Command Line + Package Manager</span>
     </button>
   </div>
 
   <div class="tab-contents">
     <div class="tab-content active" id="windows">
-      {% include installation/windows.html %}
+      {% include installation_en/windows.html %}
     </div>
 
     <div class="tab-content" id="macos">
-      {% include installation/macos.html %}
+      {% include installation_en/macos.html %}
     </div>
 
     <div class="tab-content" id="linux">
-      {% include installation/linux.html %}
+      {% include installation_en/linux.html %}
     </div>
   </div>
 </div>
 
 ---
 
-## 🎉 恭喜你！
+## 🎉 Congratulations!
 
-你已经成功安装并配置了 Claude Code，现在可以开始享受 AI 编程助手带来的便利了。
+You've successfully installed and configured Claude Code. Now you can start enjoying the convenience of an AI programming assistant.
 
-### 🚀 下一步
+### 🚀 Next Steps
 
-1. **开始第一个项目**：在项目目录中运行 `claude`
-2. **探索功能**：尝试代码生成、重构、调试等功能
-3. **加入社区**：获取更多使用技巧和最佳实践
+1. **Start Your First Project**: Run `claude` in your project directory
+2. **Explore Features**: Try code generation, refactoring, debugging, etc.
+3. **Join Community**: Get more tips and best practices
 
-### 📚 相关资源
+### 📚 Related Resources
 
-- [使用教程](/usage-guide.html) - 详细的使用指南
-- [完整指南](/comprehensive-guide.html) - 一站式服务指南
-- [拼车服务](/carpool.html) - 团队订阅指南
+- [Complete Guide](/en/comprehensive-guide.html) - One-stop service guide
+- [Deployment Guide](/en/deployment-guide.html) - Step-by-step deployment tutorial
+- [Carpool Service](/en/carpool.html) - Team subscription guide
 
-### 💬 需要帮助？
+### 💬 Need Help?
 
-如果在使用过程中遇到任何问题，可以：
+If you encounter any issues:
 
-- 查看上方的常见问题解决方案
-- 访问 [GitHub Issues](https://github.com/Jascenn/codecodex.ai/issues)
-- 加入我们的 [Telegram 群组](https://t.me/codecodx_ai)
+- Check the troubleshooting solutions above
+- Visit [GitHub Issues](https://github.com/Jascenn/codecodex.ai/issues)
+- Join our [Telegram Group](https://t.me/codecodx_ai)
 
 ---
 
 <div class="install-footer-cta" role="contentinfo">
-  <strong>🌟 开始你的 AI 编程之旅！</strong>
+  <strong>🌟 Start Your AI Programming Journey!</strong>
   <div class="links">
-    <a href="/">🏠 返回首页</a>
+    <a href="/en/">🏠 Home</a>
     <span>·</span>
-    <a href="/comprehensive-guide.html">📖 完整指南</a>
+    <a href="/en/deployment-guide.html">📖 Deployment Guide</a>
     <span>·</span>
-    <a href="/carpool.html">🚗 拼车服务</a>
+    <a href="/en/carpool.html">🚗 Carpool Service</a>
   </div>
-  <div class="copyright">© 2025 CodeCodex - 探索 AI 编程的无限可能</div>
+  <div class="copyright">© 2025 CodeCodex - Explore the Infinite Possibilities of AI Programming</div>
 </div>
 
 <style>
